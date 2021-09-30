@@ -1,7 +1,17 @@
 import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import Joi from "joi";
 
 export default function Formikform() {
+	const schema = {
+		name: Joi.string().min(3).max(30).required(),
+		designation: Joi.number().required()
+	};
+
+	const validate = () => {
+		const result = Joi.validate(this.state.account, this.schema);
+		console.log(result);
+	}
 	return (
 		<div>
 			<Formik

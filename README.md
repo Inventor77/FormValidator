@@ -11,9 +11,6 @@
 
 
 
-
-#### What's next for GESTOR PRINCIPAL
-
 ### Built With
 
 `React` `React Router` `Formik` `Tailwind` `Joi`
